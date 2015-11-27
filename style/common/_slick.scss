@@ -1,0 +1,22 @@
+.slick-slider-wrapper {
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -100;
+  margin-bottom: 0;
+
+  @media screen and (max-width: 1400px) {
+    .slick-list, .slick-track, .bg-wrapper {
+      height: 100%;
+      width: auto;
+    }
+  }
+
+  img {
+    height: 100%;
+    width: auto;
+  }
+}
