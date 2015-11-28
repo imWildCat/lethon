@@ -19,18 +19,32 @@ IndexPage = React.createClass({
       fade: true,
     };
 
+    let aboutPath = FlowRouter.path('about', {});
+
     return (
       <div id="index-page">
         <ReactSlick {...settings} className="slick-slider-wrapper">
-          <div><img src="http://ww1.sinaimg.cn/large/7deee1d1jw1eyftjd7kxzj21kw126b29.jpg" alt="city-1"/></div>
-          <div><img src="http://ww4.sinaimg.cn/large/7deee1d1jw1eyfulfkypqj21kw11x14r.jpg" alt="school-1"/></div>
-          <div><img src="http://ww3.sinaimg.cn/large/7deee1d1jw1eyfuqkb8xvj21kw0w2qed.jpg" alt="book-1"/></div>
-          <div><img src="http://ww2.sinaimg.cn/large/7deee1d1jw1eyfuu25dfmj21kw11xwti.jpg" alt="student-1"/></div>
-          <div><img src="http://ww2.sinaimg.cn/large/7deee1d1jw1eyfuswd46uj21kw11x4ev.jpg" alt="book-2"/></div>
+          <div>
+            <div className="img"></div>
+          </div>
+          <div>
+            <div className="img school-1"></div>
+          </div>
+          <div>
+            <div className="img book-1"></div>
+          </div>
+          <div>
+            <div className="img student-1"></div>
+          </div>
+          <div>
+            <div className="img book-2"></div>
+          </div>
         </ReactSlick>
+
         <div className="logo">
           <h1>滕州一中校友会</h1>
         </div>
+
         <div className="title-wrapper">
           <div className="container">
             <div className="inner-container">
@@ -39,6 +53,14 @@ IndexPage = React.createClass({
             </div>
           </div>
         </div>
+
+        <div className="nav">
+          <ul>
+            <li><a href={aboutPath}>关于</a></li>
+            <li>留言</li>
+          </ul>
+        </div>
+
       </div>
     );
   }

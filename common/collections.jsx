@@ -4,7 +4,7 @@ if (Meteor.isServer) {
   Posts.insert({
     _id: 'one', title: 'New Meteor Rocks', content: 'Yeah! Check our Meteor Blog for more!'
   });
-  Posts.insert({_id: 'two', title: 'MeteorHacks + Kadira => Kadira++', content: 'Something new soon.'});
+  Posts.insert({_id: 'two1', title: 'MeteorHacks + Kadira => Kadira++', content: 'Something new soon.'});
   Posts.insert({_id: 'three', title: 'My Secret Post', category: 'private'});
   Posts.insert({_id: 'four', title: 'My WilDCat Post', category: 'private'});
 }

@@ -30,4 +30,29 @@
       }
     }
   }
+
+  .nav {
+    position: fixed;
+    right: 16px;
+    top: 20px;
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        float: left;
+        margin-right: 20px;
+
+        a {
+          color: #ffffff;
+          text-decoration: none;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
 }

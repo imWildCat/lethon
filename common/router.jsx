@@ -7,6 +7,15 @@ FlowRouter.route("/", {
   }
 });
 
+FlowRouter.route("/about", {
+  name: "about",
+  action() {
+    ReactLayout.render(NormalLayout, {
+      content: <AboutPage />
+    });
+  }
+});
+
 FlowRouter.route('/post/:_id', {
   name: 'post',
   action(params) {
